@@ -1,5 +1,5 @@
 # Use the official Ollama image
-FROM ollama/ollama:rocm
+FROM ollama/ollama:latest
 
 # Start ollama
 RUN nohup bash -c "ollama serve &" && sleep 5 && ollama pull gemma3:1b
